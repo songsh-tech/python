@@ -1,0 +1,39 @@
+import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
+
+# matplotlib의 글꼴 객체를 생성
+font_entry = fm.FontEntry(
+  fname=r'font/NanumGothic.ttf',
+  name='NanumGothic'
+)
+
+# 글꼴 개체를 font manager에 등록
+fm.fontManager.ttflist.insert(0, font_entry)
+
+plt.rcParams.update({
+  'font.family': 'NanumGothic',
+  'font.size': 14,
+  'axes.unicode_minus' : False
+})
+
+# X축 연도
+Year = [2000, 2005, 2010, 2015, 2020]
+# 각 연도 별 남녀 인구
+Male = [23.5, 23.9, 24.3, 24.6, 25.2]
+Female = [22.7, 23.1, 23.6, 24.0, 24.8]
+
+# 제목
+plt.title('Population (millions)')
+# x축, y축 틱지정
+plt.xticks(Year)
+plt.yticks([23, 23.5, 24, 24.5, 25])
+# 조건에 따른 남자 라인 플롯 생성
+plt.plot(Year, Male, c='#0000ff50', lw=5, ls=':', marker = '.', ms=10, mfc='#0000ff', label='Male')
+# 조건에 따른 여자 라인 플롯 생성
+plt.plot(Year, Female, c='#ff000050', lw=5, ls=':', marker = '.', ms=10, mfc='#ff0000', label='Female')
+# 그리드 생성
+plt.grid(True)
+# 오른쪽 아래 범례 설정
+plt.legend(loc=4)
+# 그래프 보여주기
+plt.show()
