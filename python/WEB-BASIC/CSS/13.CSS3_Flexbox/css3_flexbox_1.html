@@ -9,22 +9,30 @@
 
         /*
             flexbox : 
-                - 
-                - 
-                - 
-                - 
-                - 
-                - 
-                - 
+                - 요소의 사이즈가 불명확하거나 반응형 웹을 구축할 때 유연한 레이아웃을 구현할 수 있도록 함
+                - 복잡한 레이아웃을 손쉽게 표현 가능
+                - 1차원 레이아웃에 적합
+
+                - 장점 :
+                - 1줄의 코드로 수평, 수직 정렬 가능
+                - 요소간 상하좌우 정렬, 순서 변경이 용이
+                - 요소간 간격 조절이 편리
         */
 
         /*
-            flexbox container : 
-                - 
-                - 
+            flexbox container : flex item을 자식으로 가지는 부모요소, display 속성 값을 flex 혹은 inline-flex로 지정하여 사용 가능
+                - flex : flex container를 block 요소로 지정
+                - inline-flex : flex container를 inline 요소로 지정
         */
-        
+        .flex-container {
+            background-color: rgba(0, 0, 0, 0.4);
+            display: flex;
+        }
 
+        .inline-flex-container {
+            background-color: rgba(0, 0, 0, 0.4);
+            display: inline-flex;
+        }
 
 
         /*
@@ -32,24 +40,70 @@
         */
 
         /*
-            flex-direction 속성 : 
-                - 
-                - 
-                - 
-                - 
+            flex-direction 속성 : flex container의 주축 방향을 지정
+                - row : 좌에서 우로 배치 (기본값)
+                - row-reverse : 우에서 좌로 배치
+                - column : 위에서 아래로 배치
+                - column-reverse : 아래에서 위로 배치
         */
-        
+        .flex-item-sample {
+            width: 200px;
+            padding: 25px;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        .flex-row-container {
+            background-color: rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flex-row-reverse-container {
+            background-color: rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .flex-column-container {
+            background-color: rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flex-column-reverse-container {
+            background-color: rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column-reverse;
+        }
 
 
         /*
-            flex-wrap 속성 : 
-                - 
-
-                - 
-                - 
-                - 
+            flex-wrap 속성 : flex container의 범위를 초과하는 flex item을 하나의 행에 표현할 지 여러 행에 표현할지 지정
+                - nowrap : flex item을 한 행에 표현 (기본값)
+                - wrap : flex item이 범위를 초과하면 아래행에 나열
+                - wrap-reverse : flex item이 범위를 초과하면 윗행에 나열
         */
+        .flex-nowrap-container {
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.2);
+            
+            flex-wrap: nowrap;
+        }
 
+        .flex-wrap-container {
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.2);
+            
+            flex-wrap: wrap;
+        }
+
+        .flex-wrap-reverse-container {
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.2);
+            
+            flex-wrap: wrap-reverse;
+        }
 
         /*
             justify-content 속성 : 
