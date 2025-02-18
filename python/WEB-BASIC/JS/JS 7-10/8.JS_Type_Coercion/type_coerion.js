@@ -23,6 +23,7 @@ console.log('==============================');
 /*
     불리언 타입으로 형변환
     - '', 0, -0, NaN, null, undefined는 false, 나머지는 true로 자동 형변환
+    - ! 피연산자가 논리값이 아니면 논리값으로 자동 형변환
 */
 var x = null;
 if (x) {
@@ -30,6 +31,8 @@ if (x) {
 } else {
     console.log('is null');
 }
+
+
 
 console.log('==============================');
 
@@ -44,7 +47,7 @@ console.log('==============================');
 */
 var number = 10;
 console.log(String(number), typeof String(number));
-console.log(number.toString(), typeof numberr.toString());
+console.log(number.toString(), typeof number.toString());
 
 console.log('==============================');
 
@@ -78,5 +81,3 @@ console.log('==============================');
     - true || data => true
     - false || data => data
 */
-
-
