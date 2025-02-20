@@ -1,0 +1,228 @@
+@font-face {
+  font-family: 'NEXON Lv1 Gothic';
+  src: url('https://drive.google.com/file/d/1SzKXWot9iRW3orxcKUCbaSikJy7RIlkI/view?usp=sharing') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: #17191d;
+  font-family: 'NEXON Lv1 Gothic', sans-serif, serif;
+
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  line-height: normal;
+  overflow-y: scroll;
+}
+
+#wrapper {
+  max-width: 492px;
+  min-width: 360px;
+  min-height: 100vh;
+  padding: 0 16px 200px;
+  margin: 0 auto;
+}
+
+.header {
+  min-width: 328px;
+  padding-top: 120px;
+  text-align: center;
+}
+
+#contents {
+  position: relative;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-width: 328px;
+  height: 80px;
+  padding: 32px 0 0;
+  text-align: center;
+}
+
+.headerMsg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 30px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #17191d;
+  z-index: 1000;
+}
+
+.logo-box {
+  height: 20px;
+  width: 120px;
+  display: inline-block;
+}
+
+.logo {
+  height: 100%;
+
+  background-image: url("../image/nexon-logo.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.tab-container {
+  display: flex;
+  justify-content: center; 
+}
+
+.tab-item {
+  box-sizing : border-box;
+  width: 105px;
+  height: 34px;
+  border-bottom: 1px solid #e5e8eb;
+
+  color: #9fa1a7;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  line-height: 34px;
+}
+
+.active {
+  color: #17191d;
+  border-bottom-width: 2px;
+  border-bottom-color: #17191d;
+}
+
+.otpLogin {
+  display: block;
+  padding-top: 40px;
+}
+
+.otpLoginMsg {
+  padding-bottom: 40px;
+
+  letter-spacing: -.6px;
+  text-align: center;
+  color: #737881;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.otppass-container {
+  display: flex;
+  height: 68px;
+}
+
+.otppass-container div {
+  float: left;
+  width: 50%
+}
+
+.otppass1 {
+  display: flex;
+  padding-right: 4px;
+}
+
+.otppass2 {
+  display: flex;
+  padding-left: 4px;
+}
+
+.input01 {
+  display: flex;
+  width: 100%;
+  height: 32px;
+  padding: 11px 12px;
+  border: 1px solid #e5e8eb;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  outline: 0;
+}
+
+
+
+.buttonLogin {
+  padding-top: 18px;
+}
+
+.button01 {
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #17191d;
+  font-weight: bold;
+  text-align: center;
+}
+
+.button01:hover {
+  background-color: #0077ff;
+  cursor: pointer;
+}
+
+.otpGuide-box {
+  display: block;
+  
+  position: relative;
+  padding-top: 20px;
+  margin-top: 68px;
+  border-top: 1px solid #e5e8eb;
+}
+
+.otpGuideMsg {
+  font-weight: 700;
+  letter-spacing: -.6px;
+  color: #737881;
+
+  font-size: 12px;
+}
+
+.NexonPlayGuide {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  letter-spacing: -.6px;
+
+  font-weight: 700;
+  color: #9fa1a7;
+  font-size: 12px;
+}
+
+.NexonPlayGuide:hover {
+  color:#0077ff;
+  cursor: pointer;
+}
+
+.otpGuidetext {
+  padding-top: 10px;
+  list-style: none;
+
+  line-height: 1.67;
+  letter-spacing: -.6px;
+  text-align: left;
+  color: #9fa1a7;
+  font-size: 12px;
+}
+
+.tab-item:hover {
+  color:#0077ff;
+  cursor: pointer;
+}
+
+.active:hover {
+  color: #17191d;
+  cursor: default;
+}
+.copyright {
+  font-size: 11px;
+  color: #9fa1a7;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
