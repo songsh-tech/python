@@ -58,7 +58,7 @@ const funcType: (arg: string) => string = (arg: string): string => {
     - 타입을 선언하지 않고 변수에 값이 초기화되는 순간에 초기화된 데이터의 타입으로 결정되는 것
 */
 let str = '문자열';
-// str = 1234
+// str = 1234;
 
 
 /*
@@ -87,7 +87,7 @@ const func3 = (): string | number => {
     else return 0;
 };
 
-const obj: {
+let obj: {
     name: string, 
     age: number
 } | null = {
